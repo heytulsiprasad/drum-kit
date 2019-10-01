@@ -81,8 +81,9 @@ footer {
 @media screen and (max-width: 720px) {
   .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .w,
@@ -92,6 +93,7 @@ footer {
   .j,
   .k,
   .l {
+    flex: 1;
     flex-grow: 1;
     flex-basis: auto;
     align-items: flex-start;
